@@ -1,0 +1,49 @@
+@import '../../scss/variables';
+.grid-wrapper {
+padding:3px;
+border-radius: 12px;
+background: #84A4FC;}
+
+.grid-row {
+    flex-direction: row;
+    display: flex;
+    flex-grow: 7;
+}
+
+.grid-cell,
+.psuedo-grid-cell {
+    flex-direction: row;
+    flex-grow: 7;
+    height:64px;
+    width:64px;
+}
+
+.grid-disc {
+    height: 100%;
+    border-radius: 50%;
+    // border: 2px solid #294e80;
+    background-color: white;
+}
+
+.psuedo-grid-cell .grid-disc {
+    border-color: transparent;
+    background-color:#84A4FC;
+}
+.disc-image {
+    flex-grow: 7;
+}
+
+.grid-cell .grid-disc.green,
+.psuedo-grid-cell .grid-disc.green.active {
+    background-image: url("../../../assets/images/avatar01.png");
+    border:4px solid $dark-green;
+    background-color: $green;
+
+}
+
+.grid-cell .grid-disc.yellow,
+.psuedo-grid-cell .grid-disc.yellow.active {
+    background-image: url("../../../assets/images/avatar02.png");
+    border:4px solid $yellow;
+    background-color: $skin;
+}

@@ -1,0 +1,56 @@
+<div class="container-fluid wrapper-div">
+    <div class="top-nav-header">{{labelData.twoPlayersGame}}</div>
+    <div class="container-wrapper col-xs-12 col-sm-8 col-md-8 col-lg-6">
+        <form #myForm="ngForm" class="col-xs-12col-lg-12 col-sm-12 col-md-12">
+            <div class="input-group group-content player-one">
+                <div class="img-container">
+                    <img src="../../../assets/images/avatar01.png">
+                </div>
+                <div class="input-container">
+                    <label>
+                        {{labelData.player01}}
+                    </label>
+                    <input type="text" [(ngModel)]="playerOneName" name="David" class="form-control" placeholder="David" required>
+                </div>
+            </div>
+            <div class="input-group group-content player-two">
+                <div class="img-container">
+                    <img src="../../../assets/images/avatar02.png">
+                </div>
+                <div class="input-container">
+                    <label>
+                        {{labelData.player02}}
+                    </label>
+                    <input type="text" [(ngModel)]="playerTwoName" name="Maria" class="form-control" placeholder="Maria" required>
+                </div>
+            </div>
+            <div class="input-group group-content game">
+                <div class="img-container">
+                    <img src="../../../assets/icons/winner.png">
+                </div>
+                <div class="input-container" (click)="selectNoOfGames()">
+                    <label>
+                        {{labelData.noOfGames}}
+                    </label>
+                    <input class="form-control" placeholder="2" value={{gamesSelected}} required>
+                </div>
+            </div>
+            <div class="input-group group-content game">
+                <div class="img-container">
+                    <img src="../../../assets/icons/run.png">
+                </div>
+                <div class="input-container" (click)="selectTheTurnOption()">
+                    <label>
+                        {{labelData.whoStarts}}
+                    </label>
+                    <input class="form-control" placeholder="Alternative turn" value={{turnSelected}} required>
+                </div>
+            </div>
+            <div class="form-group col-md-12 button-container">
+                <button type="submit" [disabled]="!myForm.valid" class="btn col-lg-12" (click)="setFormData()">{{labelData.startGame}}</button>
+            </div>
+        </form>
+
+
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.modal-content {
+  border-radius: 30px;
+  .modal-body {
+    .modal-description {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+  .modal-footer {
+    justify-content: center !important;
+  }
+  .list-group {
+    border-bottom: 1px solid #70707026;
+    padding: 10px;
+  }
+  .list-group-item {
+    border: none;
+    background: #eff3ff 0% 0% no-repeat padding-box;
+    border-radius: 15px !important;
+    margin-top: 12px;
+  }
+}

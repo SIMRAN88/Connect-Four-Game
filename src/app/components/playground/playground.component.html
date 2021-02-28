@@ -1,0 +1,25 @@
+<div class="grid-wrapper">
+    <!-- pseudo cells not required as per design -->
+    <!-- <div class="disc-image grid-row">
+        <div *ngFor="let item of psuedoDiscs; let i=index;" 
+            class="psuedo-grid-cell"
+            (click)="handleClick(item, 0, i)"
+            (mouseenter)="handleMouseEnter(item, i)"
+            (mouseleave)="handleMouseLeave(item, i)"
+            (blur)="handleBlur(item, i)" >
+            <div class="grid-disc {{chanceColor}} {{item.active}}"></div>
+        </div>
+    </div> -->
+    <div class="grid-row"
+        *ngFor="let columns of gridData; let i = index"
+        >
+        <div *ngFor="let item of columns; let j = index" 
+            class="grid-cell"
+            (click)="handleClick(item, i, j)"
+            (mouseenter)="handleMouseEnter(item, j)"
+            (mouseleave)="handleMouseLeave(item, j)"
+            (blur)="handleBlur(item, j)" >
+            <div class="grid-disc {{getGridDiscClass(item.type)}}"></div>
+        </div>
+    </div>
+</div>

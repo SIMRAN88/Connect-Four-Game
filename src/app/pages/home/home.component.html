@@ -1,0 +1,56 @@
+<div class="container-fluid wrapper-div">
+
+    <div class="container-wrapper">
+        <div class="inner-container">
+            <div class="content-container">
+                <h4 class="title">
+                    CONNECT FOUR
+                </h4>
+                <p>Play with other players</p><p>around the world.</p>
+            </div>
+            <div class="img-container">
+                <img src="../../../assets/images/4inarow.png" />
+            </div>
+            <div class="container-div">
+                <div class="btn-wrapper">
+                    <div class="row">
+                        <div class="col-md-6 btn-container">
+                            <button attr.aria-label="{{labelData.customGame}}" class="btn col-lg-12 custom-game__btn"
+                                (click)="comingSoon()">
+                                <img src="../../../assets/icons/one.png">
+                                {{labelData.customGame}}
+                            </button>
+                        </div>
+                        <div class="col-md-6 btn-container">
+                            <button attr.aria-label="{{labelData.twoPlayers}}" class="btn col-lg-12 two-players__btn"
+                                (click)="launchTwoPlayersGame()">
+                                <img src="../../../assets/icons/two.png">
+                                {{labelData.twoPlayers}}
+                            </button>
+                        </div>
+                        <div class="col-md-6 btn-container">
+                            <button attr.aria-label="{{labelData.gameOnline}}" class="btn col-lg-12 game-online__btn"
+                                (click)="comingSoon()">
+                                <img src="../../../assets/icons/online.png">
+                                {{labelData.gameOnline}}
+                            </button>
+                        </div>
+                        <div class="col-md-6 btn-container">
+                            <button attr.aria-label="{{labelData.trainingGame}}"
+                                class="btn col-lg-12 training-game__btn" (click)="comingSoon()">
+                                <img src="../../../assets/icons/training.png">
+                                {{labelData.trainingGame}}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-div">
+                <p>© 2020</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

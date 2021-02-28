@@ -1,0 +1,45 @@
+@import "../../scss/variables";
+.main-wrapper {
+  padding: 12px;
+  .congrats-text{
+    color:$congrats;
+  }
+  .player-card {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #70707026;
+    border-radius: 15px !important;
+    opacity: 1;
+    padding: 14px;
+    .player-info {
+      display: flex;
+      margin-left: 12px;
+      .score {
+        margin-left: 12px;
+      }
+    }
+  }
+  .player-card-one {
+    background-color: $green;
+    .img-container {
+      border: 8px solid $dark-green;
+      border-radius: 50%;
+    }
+    .playerOnePlaying {
+      border: 11px solid $current-playing;
+      border-radius: 50%;
+    }
+  }
+  .player-card-two {
+    .img-container {
+      border: 8px solid $yellow;
+      border-radius: 50%;
+    }
+    background-color: $skin;
+    .playerTwoPlaying {
+      border: 11px solid $current-playing;
+      border-radius: 50%;
+    }
+  }
+}

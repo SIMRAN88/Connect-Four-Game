@@ -1,0 +1,22 @@
+<div class="modal-body">
+    <p class="modal-description" id="modalbody">
+        {{modalConfig.titleText}}
+    </p>
+    <div *ngIf="modalType==='radioModal'">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let item of modalConfig?.data">
+                <input type="radio" [(ngModel)]="radioSelected" name="{{item.name}}" value="{{item.value}}"
+                    (change)="onItemChange(item)" />
+                {{item.name}}
+            </li>
+        </ul>
+    </div>
+    <div class="modal-footer">
+        <button *ngIf="modalType!=='normal'" class="btn btn-primary" (click)="secondaryBtnAction();activeModal.close('Cancel click')" aria-describedby="modalbody">
+            {{modalConfig.secondaryButtonName}}
+        </button>
+        <button class="btn btn-secondary" (click)="primaryBtnAction();activeModal.close('Ok click')">
+            {{ modalConfig.primaryButtonName }}
+        </button>
+    </div>
+</div>

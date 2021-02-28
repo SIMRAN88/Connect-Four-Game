@@ -1,0 +1,14 @@
+<div class="main-wrapper">
+    <div class="top-nav-header">{{labelData.twoPlayersGame}}</div>
+    <div class="app-wrappers">
+        <div class="playground-wrapper">
+            <app-playground [gridData]="playgroundData" [psuedoDiscs]="playgroundPsuedoDiscs"
+                [chanceColor]="chanceColor" (onDiscAddition)="handleDiscAddition($event)">
+            </app-playground>
+        </div>
+        <div class="leaderboard-wrapper">
+            <app-leaderboard></app-leaderboard>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,78 @@
+@import "../../scss/variables";
+
+.wrapper-div {
+  background-color: $wrap;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container-wrapper {
+      border-radius: 30px;
+      position: relative;
+    .inner-container {
+        .content-container{
+            position: fixed;
+            top:10%;
+            p{
+                margin:auto;
+                font-size:14px;
+            }
+            .title{
+             font-weight: bold;
+             color: $text-color; 
+            }
+        }
+        .copyright-div{
+            position: absolute;
+            bottom:0;
+            left: 2%;
+        }
+      .img-container {
+        position: relative;
+        height: 150px;
+        background-color: $white;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        img {
+          height: 230px;
+          width: 273px;
+          right: 0;
+          position: absolute;
+          top: -85px;
+        }
+      }
+    }
+    top:1%;
+    max-width: 600px;
+    background-color: $grey;
+    height: 60%;
+    .container-div {
+      background-color: $white;
+      opacity: 1;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+    .btn-wrapper {
+      .btn-container {
+        .btn {
+          color: $white;
+          width: 249px;
+          margin: 14px;
+          border-radius: 20px;
+        }
+        .custom-game__btn {
+          background-color: $one-game;
+        }
+        .two-players__btn {
+          background-color: $two-player;
+        }
+        .game-online__btn {
+          background-color: $game-online;
+        }
+        .training-game__btn {
+          background-color: $training-game;
+        }
+      }
+    }
+  }
+}
